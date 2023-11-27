@@ -7,3 +7,5 @@ script to **allow ipv4 ping for Hunt: Showdown**
 - [x] Debian
 - [x] Ubuntu
 - could potentially help in Debian/Ubuntu flavours
+
+#### CREDIST TO ALL SOURCES IN THE sources.txt
