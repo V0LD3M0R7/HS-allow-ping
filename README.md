@@ -3,13 +3,21 @@
 ## Fix for HUNT: SHOWDOWN on Debian/Ubuntu
 Script to **allow ipv4 ping Easy Anti-cheat used in Hunt: Showdown**
 
-### Why does this exist?
-Debian, __/etc/sysctl.d/local.conf__ needs to have this line written:
+## HOW TO USE:
+- shutdown your game if running and also your Steam client
+- download `hunt_mp.sh`, enable execution and run it in terminal
+- after the script is finished, start your game and check server status of your game
+    - play one online match, if the game does not kick you, you're good to go
+- if you still get errors or get kicked, use the `hunt_mp_wide.sh` script
 
-`net.ipv4.ping_group_range="0 $gid"` where `$gid` is your group id number
+### How does it work
+Debian/Ubuntu __/etc/sysctl.d/local.conf__ needs to have this line written:
 
-This allows EAC to ping and ensure connection between you and EAC servers
-Otherwise Hunt: Showdown will kick you from multiplayer game
+`net.ipv4.ping_group_range="0 $gid"` where `$gid` is your group id number.
+If this range doesn't help you can also use wide range: `"0 2147483647"`
+
+This allows EAC to ping your ICMP socket and ensure connection between you and EAC.
+Otherwise Hunt: Showdown will kick you from multiplayer game.
 
 ### INTENDET FOR:
 - [x] Debian

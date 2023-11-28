@@ -1,8 +1,7 @@
 #! /bin/bash
 
 echo "The script will now enable ipv4 ping for current session" && sleep 2
-gid=$(id -g)
-sudo sysctl -w net.ipv4.ping_group_range="0 $gid"
+sudo sysctl -w net.ipv4.ping_group_range="0 2147483647"
 echo " "
 echo "Ping is enabled for this session" && sleep 2
 echo " "
@@ -12,9 +11,7 @@ read -p "Do you wish to enable ipv4 ping for your user account by default? (y/n)
 while true; do
     case $yn in 
 	    [Yy]* ) 
-            gid=$(id -g);
-            ping_allow_write=net.ipv4.ping_group_range="0 $gid";
-            sudo echo "$ping_allow_write;" > /etc/sysctl.d/local.conf;
+            sudo echo 'net.ipv4.ping_group_range="0 2147483647"' > /etc/sysctl.d/local.conf;
             echo "The process is finished. Closing in 3 seconds" && sleep 1;
             echo "closing." && sleep 1;
             echo "closing.." && sleep 1;
