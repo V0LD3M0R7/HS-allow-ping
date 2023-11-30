@@ -16,7 +16,7 @@ while true; do
             ping_allow_write=net.ipv4.ping_group_range="0 $gid";
             sudo echo "$ping_allow_write;" > /etc/sysctl.d/local.conf;
             echo "The process is finished. Closing in 3 seconds" && sleep 1;
-            echo
+            echo ;
             echo "closing." && sleep 1;
             echo "closing.." && sleep 1;
             echo "closing..." && sleep 1;
@@ -24,7 +24,7 @@ while true; do
 
         [Nn]* ) 
             echo "Closing in 3 seconds" && sleep 1;
-            echo
+            echo ;
             echo "closing." && sleep 1;
             echo "closing.." && sleep 1;
             echo "closing..." && sleep 1;
