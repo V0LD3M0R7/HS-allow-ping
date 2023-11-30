@@ -1,6 +1,5 @@
 #! /bin/bash
 
-echo " "
 echo "The script will now enable ipv4 ping for current session" && sleep 2
 gid=$(id -g)
 sudo sysctl -w net.ipv4.ping_group_range="0 $gid"
@@ -16,16 +15,18 @@ while true; do
             gid=$(id -g);
             ping_allow_write=net.ipv4.ping_group_range="0 $gid";
             sudo echo "$ping_allow_write;" > /etc/sysctl.d/local.conf;
-            echo "The process is finished. Closing in 3 seconds" && sleep 1;;
+            echo "The process is finished. Closing in 3 seconds" && sleep 1;
+            echo "closing." && sleep 1;
+            echo "closing.." && sleep 1;
+            echo "closing..." && sleep 1;
+            kill $PPID;;
 	
         [Nn]* ) 
-            echo "Closing in 3 seconds" && sleep 1;;
-
+            echo "Closing in 3 seconds" && sleep 1;
+            echo "closing." && sleep 1;
+            echo "closing.." && sleep 1;
+            echo "closing..." && sleep 1;
+		    kill $PPID;;
         * )
             echo "Please answer yes or no.";;
     esac
-done
-echo "closing." && sleep 1
-echo "closing.." && sleep 1
-echo "closing..." && sleep 1
-kill $PPID
