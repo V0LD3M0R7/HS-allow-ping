@@ -10,9 +10,9 @@ read -p "Do you wish to enable ipv4 ping for your user account by default? (y/n)
 
 # not sure if `while true; do` is neccesery
 while true; do
-    case $yn in 
+    case $yn in
+
 	    [Yy]* ) 
-            gid=$(id -g);
             ping_allow_write=net.ipv4.ping_group_range="0 $gid";
             sudo echo "$ping_allow_write;" > /etc/sysctl.d/local.conf;
             echo "The process is finished. Closing in 3 seconds" && sleep 1;
@@ -20,13 +20,16 @@ while true; do
             echo "closing.." && sleep 1;
             echo "closing..." && sleep 1;
             kill $PPID;;
-	
+
         [Nn]* ) 
             echo "Closing in 3 seconds" && sleep 1;
             echo "closing." && sleep 1;
             echo "closing.." && sleep 1;
             echo "closing..." && sleep 1;
 		    kill $PPID;;
+
         * )
             echo "Please answer yes or no.";;
+
     esac
+done
