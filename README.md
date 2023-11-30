@@ -15,6 +15,7 @@ Debian/Ubuntu __/etc/sysctl.d/local.conf__ needs to have this line written:
 
 `net.ipv4.ping_group_range="0 $gid"` where `$gid` is your group id number.
 If this range doesn't help you can also use wide range: `"0 2147483647"`
+If you want to know your group id you can use this linux command: `id -g`
 
 This allows EAC to ping your ICMP socket and ensure connection between you and EAC.
 Otherwise Hunt: Showdown will kick you from multiplayer game.
