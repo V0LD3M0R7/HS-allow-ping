@@ -23,7 +23,7 @@ Otherwise Hunt: Showdown will kick you from multiplayer game.
 ### INTENDET FOR:
 - [x] Debian
 - [x] Ubuntu
-- should also help in Debian/Ubuntu forked operating systems
+- should help in other Linux distributions like Fedora
 
 #### CREDIST TO ALL SOURCES IN THE sources.txt
 - [KubuntuKowalsky](https://www.youtube.com/@sudorm-doubt)
