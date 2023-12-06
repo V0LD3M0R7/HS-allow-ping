@@ -11,7 +11,7 @@ Script to **allow ipv4 ping Easy Anti-cheat used in Hunt: Showdown**
 - if you still get errors or get kicked, use the `hunt_mp_wide.sh` script
 
 ### How does it work
-Debian/Ubuntu __/etc/sysctl.d/local.conf__ needs to have this line written:
+Debian/Ubuntu `/etc/sysctl.d/local.conf` needs to have this line written:
 
 `net.ipv4.ping_group_range="0 $gid"` where `$gid` is your group id number.
 If this range doesn't help you can also use wide range: `"0 2147483647"`
