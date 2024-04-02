@@ -1,5 +1,7 @@
 # HS-allow-ping-deb
 
+# Warning: still doesn't work fully, test your results after applying!
+
 ## Fix for HUNT: SHOWDOWN on Debian/Ubuntu
 Script to **allow ipv4 ping Easy Anti-cheat used in Hunt: Showdown**
 
