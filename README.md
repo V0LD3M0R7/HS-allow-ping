@@ -6,13 +6,13 @@
 Script to **allow ipv4 ping Easy Anti-cheat used in Hunt: Showdown**
 
 ## HOW TO USE:
-- shutdown your game if running and also your Steam client
-- download `hunt_mp.sh`, enable execution and run it in terminal
-- after the script is finished, start your game and check server status of your game
+1. shutdown your game if running and also your Steam client
+2. download `hunt_mp.sh`, enable execution and run it in terminal
+3. after the script is finished, start your game and check server status of your game
     - play one online match, if the game does not kick you, you're good to go
-- if you still get errors or get kicked, use the `hunt_mp_wide.sh` script
+4. if you still get errors or get kicked, use the `hunt_mp_wide.sh` script
 
-### How does it work
+### How does it work?
 Debian/Ubuntu `/etc/sysctl.d/local.conf` needs to have this line written:
 
 `net.ipv4.ping_group_range="0 $gid"` where `$gid` is your group id number.
