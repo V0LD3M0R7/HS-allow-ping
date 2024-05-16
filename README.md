@@ -27,6 +27,6 @@ Otherwise Hunt: Showdown will kick you from multiplayer game.
 - [x] Ubuntu
 - should help in other Linux distributions like Fedora
 
-#### CREDIST TO ALL SOURCES IN THE sources.txt
+#### CREDITS TO ALL SOURCES IN THE sources.txt
 - [KubuntuKowalsky](https://www.youtube.com/@sudorm-doubt)
 - [SamPurple22](https://github.com/SamPurple22)
