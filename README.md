@@ -21,7 +21,8 @@ By defauld some Linux distributions do not allow certain ping connections for yo
 How can we fix this?
 `net.ipv4.ping_group_range="0 $gid"` where `$gid` is your _group id_ number.
 You can find your _group id_ by using this command: `id -g`
-If you wish to make this change permanent `/etc/sysctl.d/local.conf` needs to contain this setting for sysctl to apply it while booting your system
+If you wish to make this change permanent `/etc/sysctl.d/local.conf` needs to contain this setting for sysctl to apply it while booting your system.
+
 The "wide" range should help with Fedora OS and Fedora-based distros like Nobara: `"0 2147483647"`
 
 This allows EAC to ping your ICMP socket and ensure connection between you and EAC. Otherwise Hunt: Showdown will kick you from multiplayer game.
