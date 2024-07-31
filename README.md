@@ -8,10 +8,10 @@ Script to allow your ICMP Socket to ping Easy Anti-Cheat (EAC) used in Hunt: Sho
 
 ## HOW TO USE THE SCRIPT:
 1. shutdown Hunt: Showdown and your Steam client
-2. download `hunt_mp.sh`, enable execution and run it in terminal
-3. after the script is finished, start your game and check server status of your game
-    - try connecting to online match, if the game does not kick you, you're good to go
-4. if you still get errors or get kicked, use the `hunt_mp_wide.sh` script
+2. download and run in terminal:
+	- `hunt_mp.sh` for Debain/Ubuntu
+	- `hunt_mp_wide.sh` for Fedora
+3. after the script is finished, start your game and check server status of your game. Also try connecting to online match. If the game does not kick you, you're good to go
 
 ### How does it work?
 
@@ -23,8 +23,7 @@ You can find your _group id_ by using this command: `id -g`
 If you wish to make this change permanent `/etc/sysctl.d/local.conf` needs to contain this setting for sysctl to apply it while booting your system
 The "wide" range should help with Fedora OS and Fedora-based distros like Nobara: `"0 2147483647"`
 
-This allows EAC to ping your ICMP socket and ensure connection between you and EAC. Otherwise Hunt: Showdown will kick 
-you from multiplayer game.
+This allows EAC to ping your ICMP socket and ensure connection between you and EAC. Otherwise Hunt: Showdown will kick you from multiplayer game.
 
 ### RELEVANT OS:
 - Debian
