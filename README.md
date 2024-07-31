@@ -1,6 +1,7 @@
 # HS-allow-ping-deb
 
 This error should be fixed in Debian since 05 July 2024 - [source - Debian bug report mailing list](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1027773)
+
 I will still leave this repo accessable in case ofe somebody still being affected by this issue
 
 ## Fix for HUNT: SHOWDOWN on Debian/Ubuntu/Fedora
