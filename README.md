@@ -2,7 +2,7 @@
 
 This error should be fixed in Debian since 05 July 2024 - [source - Debian bug report mailing list](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1027773)
 
-I will still leave this repo accessable in case ofe somebody still being affected by this issue
+I will leave this repo accessable in case somebody is still being affected by this issue
 
 ## Fix for HUNT: SHOWDOWN on Debian/Ubuntu/Fedora
 Script to allow your ICMP Socket to ping Easy Anti-Cheat (EAC) used in Hunt: Showdown
