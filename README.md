@@ -2,14 +2,11 @@
 
 This error should be fixed in Debian since 05 July 2024 - [source - Debian bug report mailing list](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1027773)
 
-I will leave this repo accessable in case somebody is still being affected by this issue
-
+I will leave this repo accessable in case somebody is still being affected by this issue.
 ---
-
 Also thank you all so much for telling people in need that this script exists.
 
-I made me really happy to see this small thing help so many of you!
-
+It made me really happy to see this small thing help so many of you!
 ---
 
 ## Fix for HUNT: SHOWDOWN on Debian/Ubuntu/Fedora
